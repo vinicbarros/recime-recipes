@@ -9,7 +9,7 @@
   {
     "id": 2,
     "name": "Breakfast Burger",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "position": 2,
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   },
@@ -23,28 +23,28 @@
   {
     "id": 4,
     "name": "Beef Burger",
-    "difficulty": "Hard",
+    "difficulty": "Easy",
     "position": 4,
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   },
   {
     "id": 5,
     "name": "Fish Burger",
-    "difficulty": "Easy",
+    "difficulty": "Medium",
     "position": 5,
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   },
   {
     "id": 6,
     "name": "Turkey Burger",
-    "difficulty": "Medium",
+    "difficulty": "Hard",
     "position": 6,
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   },
   {
     "id": 7,
     "name": "Classic Burger",
-    "difficulty": "Medium",
+    "difficulty": "Easy",
     "position": 7,
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   },
