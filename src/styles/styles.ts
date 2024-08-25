@@ -6,3 +6,5 @@ const theme = {
     blue: "#0078FF",
   },
 };
+
+export { theme };
