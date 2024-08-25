@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center"><img src="https://i.imgur.com/UrtsPXR.png"></img></div>
+<hr>
+<h2 align=center>ReciMe Recipes</h2>
+<h3 align=center>Web Application | Front-End Project</h3>
+<hr>
+<h4 align=center>Built with Next.js + TypeScript + Styled-components</h4>
 
-## Getting Started
+<h4 align=center>The main goal of this coding challenge was to display a list of trending recipes and ability to filter those recipes by difficulty.</h4>
 
-First, run the development server:
+<br>
+
+<div align=center style="display: flex; flex-direction: row; justify-content: center; gap: 5%;">
+  <div>
+    <img width="500px" src="https://i.imgur.com/cerbbvc.png">
+  </div>
+  <div>
+    <img width="500px" src="https://i.imgur.com/tF58pZB.png">
+  </div>
+</div>
+
+## Application Features:
+
+- [x] Trending Recipes list
+- [x] Filter by difficulty
+- [x] Animations
+- [x] Responsive Design
+- [x] Loading
+
+## How to run the application
+
+1. Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/vinicbarros/recime-recipes.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Go to the project folder
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd recime-recipes
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install dependencies
 
-## Learn More
+```bash
+  npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the application :)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5. Access by
+```bash
+  http://localhost:8000/
+```
 
-## Deploy on Vercel
+## Technologies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Styled-Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
+![Eslint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
