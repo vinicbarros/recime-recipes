@@ -1,17 +1,15 @@
-"use client";
-
 import styled from "styled-components";
 import RecipeCard from "./RecipeCard";
 
-interface RecipesContainerProps {
+interface MappedRecipesProps {
   difficulty: DifficultyType;
   recipes: Recipe[];
 }
 
-export default function RecipesContainer({
+export default function MappedRecipes({
   difficulty,
   recipes,
-}: RecipesContainerProps) {
+}: MappedRecipesProps) {
   return (
     <Container>
       <RecipeGrid>

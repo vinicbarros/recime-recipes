@@ -1,6 +1,6 @@
 "use client";
 
-import RecipesContainer from "./RecipesContainer";
+import MappedRecipes from "./MappedRecipes";
 import TrendingRecipes from "./TrendingRecipes";
 import DifficultySelector from "./DifficultySelector";
 import { useEffect, useState } from "react";
@@ -77,7 +77,7 @@ export default function RecipesSection() {
         difficulty={difficulty}
         setDifficulty={setDifficulty}
       />
-      <RecipesContainer
+      <MappedRecipes
         difficulty={difficulty}
         recipes={sortedRecipes !== undefined ? sortedRecipes : []}
       />

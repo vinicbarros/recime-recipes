@@ -1,5 +1,3 @@
-"use client";
-
 import { theme } from "@/styles/styles";
 import { Dispatch, SetStateAction } from "react";
 import styled, { css, keyframes } from "styled-components";
@@ -22,7 +20,6 @@ export default function DifficultySelector({
       <StartButton
         onClick={() => handleFilterChange("Easy")}
         $isSelected={difficulty === "Easy"}
-        $difficulty={difficulty}
       >
         Easy
       </StartButton>
@@ -85,7 +82,6 @@ const Button = styled.div<{ $isSelected: boolean }>`
 
 const StartButton = styled(Button)<{
   $isSelected: boolean;
-  $difficulty: DifficultyType | null;
 }>`
   margin-right: -2px;
   z-index: ${({ $isSelected }) => ($isSelected ? 2 : 1)};

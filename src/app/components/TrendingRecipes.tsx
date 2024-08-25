@@ -1,5 +1,3 @@
-"use client";
-
 import { theme } from "@/styles/styles";
 import styled from "styled-components";
 
