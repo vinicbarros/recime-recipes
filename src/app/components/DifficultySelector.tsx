@@ -2,7 +2,7 @@
 
 import { theme } from "@/styles/styles";
 import { Dispatch, SetStateAction } from "react";
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 interface DifficultySelectorProps {
   difficulty: DifficultyType;
@@ -51,9 +51,22 @@ const FilterContainer = styled.menu`
   justify-content: center;
 `;
 
+const scaleUp = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
 const Button = styled.div<{ $isSelected: boolean }>`
   padding: 10px 36px;
   cursor: pointer;
+  background-color: white;
 
   border: 2px solid
     ${({ $isSelected }) =>
@@ -61,6 +74,13 @@ const Button = styled.div<{ $isSelected: boolean }>`
 
   font-weight: 600;
   font-size: 14px;
+
+  transition: all 0.3s ease;
+  ${({ $isSelected }) =>
+    $isSelected &&
+    css`
+      animation: ${scaleUp} 0.5s ease;
+    `}
 `;
 
 const StartButton = styled(Button)<{
