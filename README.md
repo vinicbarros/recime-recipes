@@ -26,7 +26,30 @@
 - [x] Responsive Design
 - [x] Loading
 
-## How to run the application
+## 📄 Approach and Decisions:
+
+### Project Structure
+I structured the project using Next.js to take advantage of its server-side rendering capabilities, which ensure fast initial load times and SEO benefits. The components are organized in a way that promotes reusability and maintainability.
+
+### API Simulation
+I simulated an API request to fetch the recipe data on client-side. This approach mimics real-world scenarios where data would typically come from a backend service. The simulated API request allows for easy adaptation to a real API in the future.
+
+### Filtering Logic
+For the filtering by difficulty, I implemented a system where:
+
+- All recipes are displayed, but those matching the selected difficulty are highlighted with a distinct border color and ordered first in the list. This decision was made to meet the challenge requirements while enhancing the user's ability to visually differentiate recipes based on difficulty.
+
+### UI/UX Design
+- Styled-components: I used styled-components to meet the challenge requirements and also to encapsulate the styles within the components, ensuring a modular and maintainable design. It also allowed me to inject keyframe animations easily.
+- Responsiveness: The application is fully responsive, with media queries and flexible layouts to ensure it looks great on both desktop and mobile devices.
+- Animations: I implemented animations for the difficulty filter and recipe cards to create a more engaging user experience. The animations are subtle but add a dynamic feel to the interactions.
+
+### Challenges Encountered
+One of the challenges I faced was ensuring that the page content was styled correctly even during the initial load. To address this:
+
+- I leveraged Next.js's built-in CSS handling and optimized the styled-components setup to prevent any flash of unstyled content (FOUC) by adding a spinner when the data is being fetched. This approach ensured a smooth and visually consistent user experience.
+
+## ⚙️ How to run the application
 
 1. Clone the project
 
@@ -57,7 +80,7 @@
   http://localhost:3000/
 ```
 
-## Technologies:
+## 🛠️ Technologies:
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Next](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
