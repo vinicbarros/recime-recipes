@@ -8,9 +8,9 @@ export default function TrendingRecipes() {
     <Wrapper>
       <Heading>Trending Recipes</Heading>
 
-      <Text weight={600}>Difficulty</Text>
+      <Text $weight={600}>Difficulty</Text>
       <Text color={theme.colors.gray_500}>
-        You can filter recipes by difficulty
+        You can filter recipes by difficulty.
       </Text>
     </Wrapper>
   );
@@ -30,8 +30,8 @@ const Heading = styled.h1`
   font-size: 28px;
 `;
 
-const Text = styled.p<{ color?: string; weight?: number }>`
+const Text = styled.p<{ color?: string; $weight?: number }>`
   font-size: 16px;
-  font-weight: ${({ weight }) => weight || 400};
+  font-weight: ${({ $weight }) => $weight || 400};
   color: ${({ color }) => color || "inherit"};
 `;
