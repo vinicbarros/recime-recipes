@@ -54,19 +54,5 @@
     "difficulty": "Hard",
     "position": 8,
     "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Bacon Burger",
-    "difficulty": "Hard",
-    "position": 9,
-    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Lamb Burger",
-    "difficulty": "Easy",
-    "position": 10,
-    "imageUrl": "https://ddg0cip9uom1w.cloudfront.net/code-challenge/burger.jpg"
   }
 ]
