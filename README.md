@@ -54,7 +54,7 @@
 
 5. Access by
 ```bash
-  http://localhost:4000/
+  http://localhost:3000/
 ```
 
 ## Technologies:
