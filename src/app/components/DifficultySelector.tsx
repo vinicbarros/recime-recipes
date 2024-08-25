@@ -18,19 +18,31 @@ export default function DifficultySelector({
   return (
     <FilterContainer>
       <StartButton
-        onClick={() => handleFilterChange("Easy")}
+        onClick={() =>
+          difficulty === "Easy"
+            ? handleFilterChange(null)
+            : handleFilterChange("Easy")
+        }
         $isSelected={difficulty === "Easy"}
       >
         Easy
       </StartButton>
       <MiddleButton
-        onClick={() => handleFilterChange("Medium")}
+        onClick={() =>
+          difficulty === "Medium"
+            ? handleFilterChange(null)
+            : handleFilterChange("Medium")
+        }
         $isSelected={difficulty === "Medium"}
       >
         Medium
       </MiddleButton>
       <EndButton
-        onClick={() => handleFilterChange("Hard")}
+        onClick={() =>
+          difficulty === "Hard"
+            ? handleFilterChange(null)
+            : handleFilterChange("Hard")
+        }
         $isSelected={difficulty === "Hard"}
       >
         Hard
@@ -60,6 +72,18 @@ const scaleUp = keyframes`
   }
 `;
 
+const scaleDown = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
+
 const Button = styled.div<{ $isSelected: boolean }>`
   padding: 10px 36px;
   cursor: pointer;
@@ -74,10 +98,14 @@ const Button = styled.div<{ $isSelected: boolean }>`
 
   transition: all 0.3s ease;
   ${({ $isSelected }) =>
-    $isSelected &&
-    css`
-      animation: ${scaleUp} 0.5s ease;
-    `}
+    $isSelected
+      ? css`
+          animation: ${scaleUp} 0.5s ease;
+        `
+      : css`
+          animation: ${scaleDown} 0.5s ease;
+        `}
+  user-select: none;
 `;
 
 const StartButton = styled(Button)<{
