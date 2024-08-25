@@ -18,7 +18,7 @@
   </div>
 </div>
 
-## Application Features:
+## ⭐️ Application Features:
 
 - [x] Trending Recipes list
 - [x] Filter by difficulty
